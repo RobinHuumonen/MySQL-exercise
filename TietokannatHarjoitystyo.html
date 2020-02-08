@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Tietokannat harjoitustyo</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ </head>
+ <body>
+ <div>PARAMETRIEN HEITTOMERKIT TUPLANA = '' </div>
+ <br> 
+ <br>
+ <div>Paivita elokuvan boolean Katsottu -muuttuja</div>
+ <form action="dbElokuvaKatsottuPDO.php" method="post">
+ Elokuvan nimi: <input type="text" name="Enimi"> <br>
+ Onko elokuva katsottu: <input type="number" name="OnkoKatsottu"> <br>
+ <input type="submit">
+ </form>
+ <br> 
+ <br> 
+ <div>Hae elokuvia</div>
+ <form action="dbHaeElokuvia.php" method="post">
+ Onko katsottu: <input type="number" name="OnkoKatsottu"> <br>
+ IMDb-arvio >=: <input type="number" step="0.1" name="IMDb"> <br>
+ <input type="submit">
+ </form>
+ <br> 
+ <br> 
+ <div>Tulosta nayttelijan elokuvat</div>
+ <form action="dbTulostaNayttelijanXElokuvat.php" method="post">
+ Nayttelijan etunimi NN: <input type="text" name="Netun"> <br>
+ Nayttelijan sukunimi NN: <input type="text" name="Nsukun"> <br>
+ <input type="submit">
+ </form>
+ <br> 
+ <br>
+ <div>Lisaa elokuva</div>
+ <form action="dbLisaaElokuvaPDO.php" method="post">
+ Ohjaajan etunimi NN: <input type="text" name="Oetun"> <br>
+ Ohjaajan sukunimi NN: <input type="text" name="Osukun"> <br> 
+ Elokuvan nimi NN: <input type="text" name="Enimi"> <br>
+ Puhuttu kieli: <input type="text" name="Kieli"> <br> 
+ Julkaistu (Suomessa) vvvv-kk-pv: <input type="text" name="Julk"> <br> 
+ Genre(t): <input type="text" name="Genr"> <br>
+ IMDb-arvio: <input type="number" step="0.1" name="IMDb"> <br>
+ Onko katsottu: <input type="number" name="OnkoKatsottu"> <br>
+ <input type="submit">
+ </form>
+ <br> 
+ <br>
+ <div>Lisaa nayttelija</div>
+ <form action="dbLisaaNayttelijaPDO.php" method="post">
+ Elokuvan nimi: <input type="text" name="Enimi"> <br>
+ Nayttelijan etunimi NN: <input type="text" name="Netun"> <br> 
+ Nayttelijan sukunimi NN: <input type="text" name="Nsukun"> <br>
+ Roolinimi: <input type="text" name="Rooli"> <br> 
+<input type="submit">
+</form>
+</body>
+</html> 
